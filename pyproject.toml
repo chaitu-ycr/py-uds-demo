@@ -1,0 +1,47 @@
+[project]
+name = "py-uds-demo"
+version = "26.0.0"
+description = "Learn and Practice UDS Protocol"
+license = { file = "LICENSE" }
+readme = "README.md"
+requires-python = ">=3.10, <=3.14"
+authors = [{ name = "chaitu-ycr", email = "chaitu.ycr@gmail.com" }]
+keywords = ["python", "template"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows"
+]
+dependencies = [
+    "dearpygui",
+    "nicegui[native]",
+]
+
+[dependency-groups]
+dev = [
+    "pyinstaller",
+    "ruff",
+    "pytest",
+    "pytest-html",
+    "pytest-sugar",
+    "pytest-clarity",
+    "pytest-cov",
+    "pytest-xdist",
+    "pytest-watch",
+    "mkdocs",
+    "mkdocs-puml",
+    "mkdocs-material",
+    "mkdocstrings[python]",
+    "mkdocs-macros-plugin",
+    "mkdocs-include-markdown-plugin",
+    "pymdown-extensions",
+]
+
+[project.urls]
+homepage = "https://github.com/chaitu-ycr/py-uds-demo"
+repository = "https://github.com/chaitu-ycr/py-uds-demo"
+documentation = "https://chaitu-ycr.github.io/py-uds-demo/"
+
+[build-system]
+requires = ["uv_build"]
+build-backend = "uv_build"
