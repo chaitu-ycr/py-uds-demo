@@ -417,6 +417,11 @@ class Web:
         self.logger.error(f"Error occurred while processing request 💉 {diagnostic_request}: {error}")
 
 
-if __name__ in {"__main__", "__mp_main__"}:
+def main():
+    """Entry point for the web interface."""
     web_ui = Web()
     web_ui.run()
+
+
+if __name__ in {"__main__", "__mp_main__"}:
+    main()

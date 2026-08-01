@@ -11,4 +11,4 @@
 - Diagnostic session management, data transmission, input/output control, and more
 - Extensible and modular codebase
 
-## [source manual](https://chaitu-ycr.github.io/py-uds-demo/source-manual)
+## [source manual](https://auto-py-utils.github.io/py-uds-demo/source-manual)

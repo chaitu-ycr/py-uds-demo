@@ -5,7 +5,7 @@ description = "Learn and Practice UDS Protocol"
 license = { file = "LICENSE" }
 readme = "README.md"
 requires-python = ">=3.10"
-authors = [{ name = "chaitu-ycr", email = "chaitu.ycr@gmail.com" }]
+authors = [{ name = "auto-py-utils", email = "chaitu.ycr@gmail.com" }]
 keywords = ["python", "template"]
 classifiers = [
     "Programming Language :: Python :: 3.10",
@@ -42,9 +42,14 @@ dev = [
 ]
 
 [project.urls]
-homepage = "https://github.com/chaitu-ycr/py-uds-demo"
-repository = "https://github.com/chaitu-ycr/py-uds-demo"
-documentation = "https://chaitu-ycr.github.io/py-uds-demo/"
+homepage = "https://github.com/auto-py-utils/py-uds-demo"
+repository = "https://github.com/auto-py-utils/py-uds-demo"
+documentation = "https://auto-py-utils.github.io/py-uds-demo/"
+
+[project.scripts]
+py-uds-demo = "py_uds_demo:main"
+py-uds-demo-cli = "py_uds_demo.interface.cli:main"
+py-uds-demo-gui = "py_uds_demo.interface.gui:main"
 
 [tool.uv]
 package = true

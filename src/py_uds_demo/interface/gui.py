@@ -79,5 +79,10 @@ class Gui:
     def _toggle_tester_present(self, sender, app_data, user_data):
         self.client.server.diagnostic_session_control.tester_present_active = bool(dpg.get_value("tester_present_checkbox"))
 
-if __name__ == "__main__":
+
+def main():
     Gui()
+
+
+if __name__ == "__main__":
+    main()
